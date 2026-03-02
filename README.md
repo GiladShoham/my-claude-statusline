@@ -2,6 +2,10 @@
 
 My custom [ccstatusline](https://github.com/sirmalloc/ccstatusline) configuration and scripts for [Bit](https://bit.dev) workspaces.
 
+## Example
+
+![Statusline Example](assets/statusline-example.png)
+
 ## Setup
 
 1. Install ccstatusline following the [installation instructions](https://github.com/sirmalloc/ccstatusline#-quick-start)
