@@ -1,0 +1,86 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "1",
+        "type": "model",
+        "color": "cyan"
+      },
+      {
+        "id": "3",
+        "type": "context-length",
+        "color": "brightBlack"
+      },
+      {
+        "id": "2e57e78d-3fc9-4ad4-9d2c-dd0254687987",
+        "type": "context-percentage"
+      },
+      {
+        "id": "e2be5390-5ad6-4fa2-943b-577947b02e7b",
+        "type": "context-percentage-usable"
+      },
+      {
+        "id": "47518bba-8c5c-41ad-b442-524012dbca80",
+        "type": "tokens-input"
+      },
+      {
+        "id": "66999291-33cf-4a7b-8c38-806e0059a50c",
+        "type": "tokens-output"
+      }
+    ],
+    [
+      {
+        "id": "63344402-4440-4661-b26e-3e2897f6cb2e",
+        "type": "git-branch"
+      },
+      {
+        "id": "7e683155-88ee-4c50-964a-d639d142d776",
+        "type": "git-changes"
+      },
+      {
+        "id": "35a3ccd7-4838-4388-acd9-b564c8cf9d00",
+        "type": "block-timer"
+      },
+      {
+        "id": "8bcd3f92-9d60-4512-95b3-150a8491d1f3",
+        "type": "session-cost"
+      }
+    ],
+    [
+      {
+        "id": "87322979-2176-4493-b620-82734e2cf94d",
+        "type": "custom-command",
+        "backgroundColor": "bgCyan",
+        "commandPath": "~/dev/my-claude-statusline/scripts/default-scope.sh"
+      },
+      {
+        "id": "a1b2c3d4-5678-9abc-def0-123456789abc",
+        "type": "custom-command",
+        "backgroundColor": "bgMagenta",
+        "commandPath": "~/dev/my-claude-statusline/scripts/lane-name.sh"
+      }
+    ]
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "defaultPadding": " ",
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "powerline": {
+    "enabled": true,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [],
+    "endCaps": [
+      ""
+    ],
+    "theme": "nord-aurora",
+    "autoAlign": true
+  }
+}
