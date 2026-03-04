@@ -59,6 +59,13 @@
         "type": "custom-command",
         "backgroundColor": "bgMagenta",
         "commandPath": "~/dev/my-claude-statusline/scripts/lane-name.sh"
+      },
+      {
+        "id": "f4e3d2c1-b0a9-8765-4321-fedcba987654",
+        "type": "custom-command",
+        "commandPath": "~/dev/my-claude-statusline/scripts/oref-alert.sh",
+        "preserveColors": true,
+        "timeout": 5000
       }
     ]
   ],
