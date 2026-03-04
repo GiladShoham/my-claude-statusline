@@ -28,17 +28,21 @@ if [ -z "$CITY" ]; then
   exit 0
 fi
 
+# Reverse Hebrew text for display — terminals render Hebrew RTL which
+# appears backwards in a LTR statusline, so reversing corrects it
+DISPLAY_CITY=$(printf '%s' "$CITY" | rev)
+
 # Test mode — return simulated output without hitting the API
 if [ -n "$OREF_TEST_MODE" ]; then
   case "$OREF_TEST_MODE" in
     shelter)
-      printf "${RED}SHELTER NOW - ${CITY}${RESET}"
+      printf "${RED}SHELTER NOW - ${DISPLAY_CITY}${RESET}"
       ;;
     clear)
-      printf "${GREEN}All clear - ${CITY}${RESET}"
+      printf "${GREEN}All clear - ${DISPLAY_CITY}${RESET}"
       ;;
     none)
-      printf "${GREEN}Safe - ${CITY}${RESET}"
+      printf "${GREEN}Safe - ${DISPLAY_CITY}${RESET}"
       ;;
     *)
       printf "${ORANGE}unknown test: ${OREF_TEST_MODE}${RESET}"
@@ -60,7 +64,7 @@ RESPONSE=$(printf '%s' "$RESPONSE" | LC_ALL=C sed 's/^\xef\xbb\xbf//')
 # Empty or whitespace-only response = no active alerts
 CLEAN=$(printf '%s' "$RESPONSE" | tr -d '[:space:]')
 if [ -z "$CLEAN" ]; then
-  printf "${GREEN}Safe - ${CITY}${RESET}"
+  printf "${GREEN}Safe - ${DISPLAY_CITY}${RESET}"
   exit 0
 fi
 
@@ -68,7 +72,7 @@ fi
 CITY_FOUND=$(printf '%s' "$RESPONSE" | grep -F "\"$CITY\"")
 
 if [ -z "$CITY_FOUND" ]; then
-  printf "${GREEN}Safe - ${CITY}${RESET}"
+  printf "${GREEN}Safe - ${DISPLAY_CITY}${RESET}"
   exit 0
 fi
 
