@@ -8,6 +8,10 @@
         "color": "cyan"
       },
       {
+        "id": "94d9cd73-1e8f-4ca2-834f-1a634762c655",
+        "type": "separator"
+      },
+      {
         "id": "3",
         "type": "context-length",
         "color": "brightBlack"
@@ -19,6 +23,10 @@
       {
         "id": "e2be5390-5ad6-4fa2-943b-577947b02e7b",
         "type": "context-percentage-usable"
+      },
+      {
+        "id": "3f823c18-d667-4b33-a4b8-a110c26a0ac5",
+        "type": "separator"
       },
       {
         "id": "47518bba-8c5c-41ad-b442-524012dbca80",
@@ -39,8 +47,16 @@
         "type": "git-changes"
       },
       {
+        "id": "ead85094-152c-4baf-b6af-ebb1435d9bc9",
+        "type": "separator"
+      },
+      {
         "id": "35a3ccd7-4838-4388-acd9-b564c8cf9d00",
         "type": "block-timer"
+      },
+      {
+        "id": "615ca5e9-f807-4065-93f6-27efc20939ba",
+        "type": "separator"
       },
       {
         "id": "8bcd3f92-9d60-4512-95b3-150a8491d1f3",
@@ -55,10 +71,18 @@
         "commandPath": "~/dev/my-claude-statusline/scripts/default-scope.sh"
       },
       {
+        "id": "5b82a314-f4be-4b59-95ac-f9286e947a85",
+        "type": "separator"
+      },
+      {
         "id": "a1b2c3d4-5678-9abc-def0-123456789abc",
         "type": "custom-command",
         "backgroundColor": "bgMagenta",
         "commandPath": "~/dev/my-claude-statusline/scripts/lane-name.sh"
+      },
+      {
+        "id": "3725cde8-05db-4344-bfc6-b265eb21edf3",
+        "type": "separator"
       },
       {
         "id": "f4e3d2c1-b0a9-8765-4321-fedcba987654",
@@ -76,7 +100,7 @@
   "inheritSeparatorColors": false,
   "globalBold": false,
   "powerline": {
-    "enabled": true,
+    "enabled": false,
     "separators": [
       ""
     ],
