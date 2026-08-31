@@ -83,7 +83,12 @@
       {
         "id": "3725cde8-05db-4344-bfc6-b265eb21edf3",
         "type": "separator"
-      },
+      }
+    ]
+  ],
+  "_disabled": {
+    "_comment": "Widgets removed from the active statusline but kept here for reference. Re-add by moving the object back into the appropriate line in 'lines'.",
+    "widgets": [
       {
         "id": "f4e3d2c1-b0a9-8765-4321-fedcba987654",
         "type": "custom-command",
@@ -92,7 +97,7 @@
         "timeout": 5000
       }
     ]
-  ],
+  },
   "flexMode": "full-minus-40",
   "compactThreshold": 60,
   "colorLevel": 2,
